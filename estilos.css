@@ -1,67 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap");
 
 * {
-  font-family: "National Park", sans-serif;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  margin: 0px;
+  font-family: "National Park", sans-serif;
 }
-body,
-html {
+
+html,
+body {
   width: 100vw;
   height: 100vh;
-  box-sizing: border-box;
-}
-body {
   display: flex;
   flex-direction: column;
 }
+
 #header,
 #footer {
   background-color: black;
-}
-#header h1,
-#footer p,
-#footer a {
+  color: white;
   text-align: center;
   padding: 30px;
-  color: white;
+}
+
+#header h1,
+#footer strong {
+  color: yellowgreen;
 }
 
 #footer a {
   text-decoration: none;
+  color: white;
 }
-#footer strong,
-#header h1 {
-  color: yellowgreen;
-}
+
 #main {
   width: 60%;
+  margin: 10px auto 30px;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
+
 .section-generic {
-  margin-top: 20px;
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
-  text-align: justify;
   padding: 30px;
+  margin-top: 20px;
+  text-align: justify;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
 .section-generic img {
   display: block;
   margin: auto;
 }
+
 table {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: block;
-  margin: auto;
   width: 40%;
+  margin: 20px auto;
+  border-collapse: collapse;
 }
-td,
-th {
+
+th,
+td {
   border: 2px solid black;
   text-align: center;
   padding: 5px;

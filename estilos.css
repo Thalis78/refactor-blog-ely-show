@@ -89,7 +89,7 @@ td {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
-  background-color: black;
+  background-color: yellowgreen;
   text-align: center;
   width: 20%;
   margin: 10px;
@@ -97,7 +97,7 @@ td {
 
 .elemento-filho a {
   padding: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
 }

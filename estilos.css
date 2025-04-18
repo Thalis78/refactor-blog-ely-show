@@ -35,6 +35,11 @@ body {
 #main {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .section-generic {
@@ -42,24 +47,26 @@ body {
   margin-top: 20px;
   text-align: justify;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .section-generic img {
   display: block;
-  margin: auto;
+  margin: 20px auto;
 }
 
 table {
-  width: 40%;
+  width: 60%;
   margin: 20px auto;
   border-collapse: collapse;
+  padding: 10px;
 }
 
 th,
 td {
   border: 2px solid black;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 th {
@@ -74,6 +81,8 @@ td {
 #div-pai {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .elemento-filho {
@@ -82,13 +91,17 @@ td {
   border-radius: 20px;
   background-color: black;
   text-align: center;
-  width: 15%;
+  width: 20%;
+  margin: 10px;
 }
+
 .elemento-filho a {
   padding: 10px;
   color: white;
   text-decoration: none;
+  display: block;
 }
+
 .elemento-filho li {
   list-style: none;
   padding: 10px;
@@ -100,7 +113,56 @@ td {
   }
 }
 
-#main {
-  background-color: white;
-  width: 50%;
+@media (max-width: 768px) {
+  #main {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .section-generic {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  table {
+    width: 80%;
+    padding: 5px;
+  }
+
+  #div-pai {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .elemento-filho {
+    width: 60%;
+    margin: 10px 0;
+  }
+
+  #header,
+  #footer {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .section-generic {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .elemento-filho {
+    width: 80%;
+    margin: 8px 0;
+  }
 }

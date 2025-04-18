@@ -14,6 +14,14 @@ body {
   flex-direction: column;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 #header,
 #footer {
   background-color: black;
@@ -24,42 +32,60 @@ body {
 
 #header h1,
 #footer strong {
-  color: yellowgreen;
+  color: #3498db;
 }
 
 #footer a {
-  text-decoration: none;
   color: white;
 }
 
 #main {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  width: 50%;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+  line-height: 1.6;
+}
+
+#main h2 {
+  text-align: center;
 }
 
 .section-generic {
-  padding: 30px;
-  margin-top: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+  border-radius: 8px;
   text-align: justify;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-generic:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .section-generic img {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
 }
 
 table {
   width: 60%;
   margin: 20px auto;
   border-collapse: collapse;
-  padding: 10px;
 }
 
 th,
@@ -70,7 +96,7 @@ td {
 }
 
 th {
-  background-color: yellowgreen;
+  background-color: #3498db;
   color: white;
 }
 
@@ -86,31 +112,64 @@ td {
 }
 
 .elemento-filho {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 6px solid #3498db;
   border-radius: 20px;
-  background-color: yellowgreen;
   text-align: center;
   width: 20%;
   margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.elemento-filho:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .elemento-filho a {
   padding: 10px;
-  color: black;
-  text-decoration: none;
   display: block;
 }
 
-.elemento-filho li {
-  list-style: none;
+nav a,
+aside a {
+  color: #3498db;
+}
+
+.home {
+  color: white;
+  margin: 30px auto 0;
+  text-align: center;
+  width: 7%;
+  border-radius: 20px;
+  background-color: black;
   padding: 10px;
+}
+
+.style-a-generic li {
+  padding: 12px 18px;
+  margin: 8px 0;
+  background-color: #f1f1f1;
+  color: #333;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 
   :hover {
-    background-color: white;
-    border-radius: 20px;
-    color: black;
+    color: white;
   }
+}
+
+.style-a-generic li:hover {
+  background-color: #3498db;
+  color: white;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -119,14 +178,8 @@ td {
     padding: 15px;
   }
 
-  .section-generic {
-    padding: 20px;
-    margin-bottom: 15px;
-  }
-
   table {
     width: 80%;
-    padding: 5px;
   }
 
   #div-pai {
@@ -151,14 +204,8 @@ td {
     padding: 10px;
   }
 
-  .section-generic {
-    padding: 15px;
-    margin-bottom: 10px;
-  }
-
   table {
     width: 90%;
-    padding: 5px;
   }
 
   .elemento-filho {

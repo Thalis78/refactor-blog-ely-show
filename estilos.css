@@ -9,7 +9,6 @@
 
 html,
 body {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,8 +33,6 @@ body {
 }
 
 #main {
-  width: 60%;
-  margin: 10px auto 30px;
   display: flex;
   flex-direction: column;
 }
@@ -72,4 +69,38 @@ th {
 
 td {
   font-weight: bold;
+}
+
+#div-pai {
+  display: flex;
+  justify-content: space-around;
+}
+
+.elemento-filho {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: black;
+  text-align: center;
+  width: 15%;
+}
+.elemento-filho a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+.elemento-filho li {
+  list-style: none;
+  padding: 10px;
+
+  :hover {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+  }
+}
+
+#main {
+  background-color: white;
+  width: 50%;
 }

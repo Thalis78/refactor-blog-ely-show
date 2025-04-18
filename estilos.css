@@ -107,7 +107,6 @@ td {
 #div-pai {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin: 20px 0;
 }
 
@@ -132,6 +131,7 @@ td {
 .elemento-filho a {
   padding: 10px;
   display: block;
+  color: #3498db;
 }
 
 nav a,
@@ -159,10 +159,6 @@ aside a {
   text-align: left;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-
-  :hover {
-    color: white;
-  }
 }
 
 .style-a-generic li:hover {

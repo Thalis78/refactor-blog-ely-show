@@ -139,13 +139,152 @@ nav a,
 aside a {
   color: #3498db;
 }
+.container-generic {
+  background-color: #f7f7f7;
+  color: #222;
+  padding: 24px;
+  border-radius: 10px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
 
-.home {
-  margin: 30px auto 0;
+.container-generic a.home {
+  margin: auto;
   text-align: center;
-  width: 7%;
-  border-radius: 20px;
+  width: 10%;
+  display: block;
+  margin-top: 20px;
+  padding: 8px 14px;
+  background-color: #e0e0e0;
+  color: #222;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.container-generic a.home:hover {
+  background-color: #cfcfcf;
+}
+
+.container-generic ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.container-generic ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.container-generic ul li:last-child {
+  border-bottom: none;
+}
+
+.container-generic ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.container-generic ul li a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.container-generic ol {
+  padding-left: 20px;
+}
+
+.container-generic dl {
+  margin-top: 16px;
+}
+
+.container-generic dt {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.container-generic dd {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.container-generic table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.container-generic th,
+.container-generic td {
+  border: 1px solid #aaa;
   padding: 10px;
+  text-align: center;
+}
+
+.container-generic th {
+  background-color: #3498db;
+}
+
+.container-generic input,
+.container-generic select,
+.container-generic textarea,
+.container-generic button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container-generic input[type="checkbox"],
+.container-generic input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+.container-generic input[type="submit"] {
+  margin: auto;
+  margin-bottom: 40px;
+  width: 40%;
+}
+
+.container-generic input[type="color"] {
+  width: 30%;
+  height: 50px;
+}
+
+.container-generic label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.container-generic form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.container-generic button,
+.container-generic input[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container-generic button:hover,
+.container-generic input[type="submit"]:hover {
+  background-color: #000;
 }
 
 .style-a-generic li {

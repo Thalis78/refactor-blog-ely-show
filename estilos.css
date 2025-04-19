@@ -140,12 +140,11 @@ aside a {
 }
 
 .home {
-  color: white;
   margin: 30px auto 0;
   text-align: center;
   width: 7%;
+  border: 1px solid #3498db;
   border-radius: 20px;
-  background-color: black;
   padding: 10px;
 }
 

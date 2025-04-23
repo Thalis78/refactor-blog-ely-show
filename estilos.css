@@ -294,6 +294,7 @@ aside a {
   background-color: #f1f1f1;
   color: #333;
   border-radius: 12px;
+  list-style: none;
   cursor: pointer;
   text-align: left;
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;

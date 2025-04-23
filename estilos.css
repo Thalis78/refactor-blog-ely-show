@@ -14,10 +14,6 @@ body {
   flex-direction: column;
 }
 
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -170,9 +166,13 @@ aside a {
 }
 
 .container-generic ul {
-  list-style: none;
+  list-style: square;
   padding-left: 0;
-  margin-top: 16px;
+  margin-left: 20px;
+}
+
+.container-generic ul ul {
+  list-style-type: circle;
 }
 
 .container-generic ul li {
@@ -196,6 +196,7 @@ aside a {
 }
 
 .container-generic ol {
+  list-style-type: upper-roman;
   padding-left: 20px;
 }
 

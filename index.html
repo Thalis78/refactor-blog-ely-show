@@ -2,9 +2,10 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>Blog da Turma</title>
     <link href="estilos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap", rel="stylesheet">
   </head>
   <body>
     <header id="header">
@@ -209,7 +210,7 @@
         <section class="section-generic" id="space">
           <h2>Listas</h2>
           <div class="container-generic">
-            <p>Lista não ordenadas de compras</p>
+            <p><strong>Lista não ordenadas de compras</strong></p>
             <ul>
               <li>Arroz</li>
               <li>Feijão</li>
@@ -218,7 +219,7 @@
               <li>Frango</li>
             </ul>
 
-            <p>Lista ordenada de prioridades</p>
+            <p><strong>Lista ordenada de prioridades</strong></p>
             <ol>
               <li>Estudar</li>
               <li>Trabalhar</li>
@@ -227,7 +228,7 @@
               <li>Estudar mais</li>
             </ol>
 
-            <p>Lista de compras com subitens</p>
+            <p><strong>Lista de compras com subitens</strong></p>
             <ul>
               <li>
                 Arroz
@@ -264,7 +265,7 @@
               </li>
             </ul>
 
-            <p>Lista de definições de siglas de computação</p>
+            <p><strong>Lista de definições de siglas de computação</strong></p>
             <dl>
               <dt>HTML</dt>
               <dd>Hyper Text Markup Language</dd>
@@ -276,8 +277,8 @@
               <dd>Hypertext Preprocessor</dd>
             </dl>
 
-            <p>Lista não ordenada usando imagens</p>
-            <ul>
+            <p><strong>Lista não ordenada usando imagens</strong></p>
+            <ul style="list-style: none;">
               <li>item 1</li>
               <li>item 2</li>
               <li>item 3</li>
@@ -290,8 +291,13 @@
         <section class="section-generic" id="alinhamento">
           <h2>Alinhamentos</h2>
           <div class="container-generic">
-            <p>Lorem ipsum dolor sit amet...</p>
-            <p>Lorem ipsum dolor sit amet...</p>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Ratione voluptatem assumenda officiis error ipsa 
+              corporis at voluptatibus nemo harum, repellat laborum, dolorum exercitationem eligendi perspiciatis, 
+              vitae maxime repudiandae cumque labore?</p>
+            <p style="text-align: right;">Lorem ipsum dolor sit amet consectetur, 
+              adipisicing elit. Omnis nesciunt, incidunt soluta unde aperiam voluptatum molestiae explicabo dolorem, 
+              doloribus fugit molestias officia dolores quis mollitia quam sit obcaecati delectus eum!</p>
             <p>08/04/2025 - por Ely Miranda <a href="#" class="home">↑</a></p>
           </div>
         </section>
@@ -299,11 +305,11 @@
         <section class="section-generic" id="fonts">
           <h2>Fontes</h2>
           <div class="container-generic">
-            <p>Lorem Ipsum - Verdana</p>
-            <p>Lorem Ipsum - Monospace 123</p>
-            <p>Lorem Ipsum - Monospace QQQ</p>
-            <p>Lorem Ipsum - Calibri</p>
-            <p>Lorem Ipsum - Dancing</p>
+            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem Ipsum - Verdana</p>
+            <p style="font-family: monospace, 'Courier New, Courier';">Lorem Ipsum - Monospace 123</p>
+            <p style="font-family: monospace, 'Courier New, Courier';">Lorem Ipsum - Monospace QQQ</p>
+            <p style="font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;">Lorem Ipsum - Calibri</p>
+            <p style="font-family: 'Dancing Script', cursive">Lorem Ipsum - Dancing</p>
             <p>08/04/2025 - por Ely Miranda <a href="#" class="home">↑</a></p>
           </div>
         </section>
@@ -311,10 +317,10 @@
         <section class="section-generic">
           <h2>Negrito, itálico etc...</h2>
           <div class="container-generic">
-            <p>Negrito</p>
-            <p>Itálico</p>
-            <p>sublinhado</p>
-            <p>Tachado</p>
+            <p><strong>Negrito</strong></p>
+            <p><em>Itálico</em></p>
+            <p><u>sublinhado</u></p>
+            <p><s>Tachado</s></p>
             <p>08/04/2025 - por Ely Miranda <a href="#" class="home">↑</a></p>
           </div>
         </section>
@@ -322,16 +328,16 @@
         <section class="section-generic" id="color">
           <div class="container-generic">
             <h2>Estudando sobre cores</h2>
-            <p>Vermelha</p>
-            <p>Azul</p>
-            <p>Verde de novo em um h6</p>
-            <h6>Verde</h6>
-            <p>Preta</p>
-            <p>Branca</p>
-            <p>Tom de cinza claro</p>
-            <p>Tom de cinza escuro</p>
-            <p>Laranja</p>
-            <p>Rosa</p>
+            <p style="color: #ff0000;">Vermelha</p>
+            <p style="color: #0000ff;">Azul</p>
+            <p style="color: #00ff00;">Verde de novo em um h6</p>
+            <h6 style="color: #00ff00;">Verde</h6>
+            <p style="color: #000000;">Preta</p>
+            <p style="color: #ffffff;">Branca</p>
+            <p style="color: #666666;">Tom de cinza claro</p>
+            <p style="color: #aaaaaa;">Tom de cinza escuro</p>
+            <p style="color: #ffa500;">Laranja</p>
+            <p style="color: #ffc0cb;">Rosa</p>
             <p>08/04/2025 - por Ely Miranda <a href="#" class="home">↑</a></p>
           </div>
         </section>
